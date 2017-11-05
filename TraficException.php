@@ -10,7 +10,9 @@ namespace JDZ\Analytics;
 /**
  * Trafic exception
  * 
- * @author Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @package Analytics
+ * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 class TraficException extends \Exception 
 {
+}

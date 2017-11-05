@@ -7,12 +7,11 @@
  */
 namespace JDZ\Analytics;
 
-use Exception;
-
 /**
  * Analytics
  * 
- * @author Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @package Analytics
+ * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 interface TraficInterface 
 {

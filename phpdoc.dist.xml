@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdoc>
+    <title>Analytics</title>
+    <parser>
+        <target>doc</target>
+        <markers>
+            <item>TODO</item>
+            <item>FIXME</item>
+        </markers>
+        <visibility>public,protected,private</visibility>
+        <extensions>
+            <extension>php</extension>
+        </extensions>
+    </parser>
+    <transformer>
+        <target>doc</target>
+    </transformer>
+    <transformations>
+        <template name="responsive-twig"/>
+    </transformations>
+    <files>
+        <file>GoogleAnalyticsTrafic.php</file>
+        <file>PiwikTrafic.php</file>
+        <file>Trafic.php</file>
+        <file>TraficException.php</file>
+        <file>TraficInterface.php</file>
+    </files>
+    <logging>
+        <level>warn</level>
+        <paths>
+            <default>{APP_ROOT}/data/log/{DATE}.log</default>
+            <errors>{APP_ROOT}/data/log/{DATE}.errors.log</errors>
+        </paths>
+    </logging>
+</phpdoc>

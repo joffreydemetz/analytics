@@ -10,7 +10,8 @@ namespace JDZ\Analytics;
 /**
  * Google Analytics
  * 
- * @author Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @package Analytics
+ * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 class GoogleAnalyticsTrafic extends Trafic 
 {
@@ -49,14 +50,44 @@ class GoogleAnalyticsTrafic extends Trafic
    */
   public function isActive()
   {
-    if ( $this->website === '' ){
-      return false;
+    return ( $this->website && $this->ua );
+  }
+
+	/**
+   * {@inheritDoc}
+   */
+  protected function setProperties(array $properties)
+  {
+    if ( isset($properties['website']) ){
+      $this->setWebsite($properties['website']);
     }
     
-    if ( $this->ua === '' ){
-      return false;
+    if ( isset($properties['website']) ){
+      $this->setUa($properties['website']);
     }
-    
-    return true;
+  }
+  
+	/**
+   * Set website
+    *
+   * @param   string  $value  Website
+   */
+  private function setWebsite($value)
+  {
+    $value = (string)$value;
+    $value = trim($value);
+    $this->website = trim($value);
+  }
+
+	/**
+   * Set UA
+    *
+   * @param   string  $value  UA
+   */
+  private function setUa($value)
+  {
+    $value = (string)$value;
+    $value = trim($value);
+    $this->ua = trim($value);
   }
 }
