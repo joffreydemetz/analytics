@@ -10,7 +10,6 @@ namespace JDZ\Analytics;
 /**
  * Google Analytics
  * 
- * @package Analytics
  * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 class GoogleAnalyticsTrafic extends Trafic 
@@ -20,21 +19,21 @@ class GoogleAnalyticsTrafic extends Trafic
    */
   public $type = 'GoogleAnalytics';
   
-	/**
+  /**
    * Website complete URL
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $website;  
   
-	/**
+  /**
    * Analytics UA
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $ua;
   
-	/**
+  /**
    * {@inheritDoc}
    */
   public function __construct(array $properties=[])
@@ -45,7 +44,7 @@ class GoogleAnalyticsTrafic extends Trafic
     parent::__construct($properties);
   }
   
-	/**
+  /**
    * {@inheritDoc}
    */
   public function isActive()
@@ -53,7 +52,7 @@ class GoogleAnalyticsTrafic extends Trafic
     return ( $this->website && $this->ua );
   }
 
-	/**
+  /**
    * {@inheritDoc}
    */
   protected function setProperties(array $properties)
@@ -67,7 +66,7 @@ class GoogleAnalyticsTrafic extends Trafic
     }
   }
   
-	/**
+  /**
    * Set website
     *
    * @param   string  $value  Website
@@ -79,7 +78,7 @@ class GoogleAnalyticsTrafic extends Trafic
     $this->website = trim($value);
   }
 
-	/**
+  /**
    * Set UA
     *
    * @param   string  $value  UA

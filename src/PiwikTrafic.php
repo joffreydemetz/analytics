@@ -10,7 +10,6 @@ namespace JDZ\Analytics;
 /**
  * Piwik
  * 
- * @package Analytics
  * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 class PiwikTrafic extends Trafic 
@@ -20,42 +19,42 @@ class PiwikTrafic extends Trafic
    */
   public $type = 'Piwik';
   
-	/**
+  /**
    * Website complete URL
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $domain;  
   
-	/**
+  /**
    * Piwik Site ID
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $siteid;
   
-	/**
+  /**
    * Tracker file name
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $tracker;
   
-	/**
+  /**
    * Set piwik domain cookie
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $setCookieDomain;
   
-	/**
+  /**
    * Set piwik domains
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $setDomains;
   
-	/**
+  /**
    * {@inheritDoc}
    */
   public function __construct(array $properties=[])
@@ -69,7 +68,7 @@ class PiwikTrafic extends Trafic
     parent::__construct($properties);
   }
   
-	/**
+  /**
    * {@inheritDoc}
    */
   public function isActive()
@@ -77,7 +76,7 @@ class PiwikTrafic extends Trafic
     return ( $this->domain && $this->siteid );
   }
 
-	/**
+  /**
    * {@inheritDoc}
    */
   protected function setProperties(array $properties)
@@ -103,7 +102,7 @@ class PiwikTrafic extends Trafic
     }
   }
   
-	/**
+  /**
    * Set domain
     *
    * @param   string  $value  Domain
@@ -115,7 +114,7 @@ class PiwikTrafic extends Trafic
     $this->domain = $value;
   }
   
-	/**
+  /**
    * Set siteid
     *
    * @param   int  $value  Site Id
@@ -126,7 +125,7 @@ class PiwikTrafic extends Trafic
     $this->siteid = $value;
   }
   
-	/**
+  /**
    * Set tracker
     *
    * @param   string  $value  Tracker
@@ -138,7 +137,7 @@ class PiwikTrafic extends Trafic
     $this->tracker = $value;
   }
   
-	/**
+  /**
    * Set Cookie Domain
     *
    * @param   string  $value  setCookieDomain
@@ -150,7 +149,7 @@ class PiwikTrafic extends Trafic
     $this->setCookieDomain = $value;
   }
   
-	/**
+  /**
    * Set Domains
     *
    * @param   string  $value  setDomains

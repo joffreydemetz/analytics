@@ -8,11 +8,16 @@
 namespace JDZ\Analytics;
 
 /**
- * Trafic exception
+ * Analytics
  * 
- * @package Analytics
  * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
-class TraficException extends \Exception 
+interface TraficInterface 
 {
+  /**
+   * Check the config
+   * 
+   * @return bool
+   */
+  public function isActive();
 }

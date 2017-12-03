@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpdoc>
-    <title>Analytics</title>
+    <title>JDZ Analytics</title>
     <parser>
-        <target>doc</target>
+        <target>../../docs/analytics/</target>
         <markers>
             <item>TODO</item>
             <item>FIXME</item>
@@ -13,23 +13,21 @@
         </extensions>
     </parser>
     <transformer>
-        <target>doc</target>
+        <target>../../docs/analytics/</target>
     </transformer>
     <transformations>
         <template name="responsive-twig"/>
     </transformations>
     <files>
-        <file>GoogleAnalyticsTrafic.php</file>
-        <file>PiwikTrafic.php</file>
-        <file>Trafic.php</file>
-        <file>TraficException.php</file>
-        <file>TraficInterface.php</file>
+        <file>shortcuts.php</file>
+        <directory>src</directory>
+		<ignore>tests/*</ignore>
     </files>
     <logging>
-        <level>warn</level>
+        <level>warning</level>
         <paths>
-            <default>{APP_ROOT}/data/log/{DATE}.log</default>
-            <errors>{APP_ROOT}/data/log/{DATE}.errors.log</errors>
+            <default>../../docs/_log/analytics/{DATE}.log</default>
+            <errors>../../docs/_log/analytics/{DATE}.errors.log</errors>
         </paths>
     </logging>
 </phpdoc>

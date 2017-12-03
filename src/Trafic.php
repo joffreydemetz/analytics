@@ -10,22 +10,21 @@ namespace JDZ\Analytics;
 /**
  * Web trafic
  * 
- * @package Analytics
  * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
-abstract class Trafic implements TraficInterface 
+abstract class Trafic implements TraficInterface
 {
-	/**
+  /**
    * Trafic type
    * 
-   * @var 	string 
+   * @var   string 
    */
   public $type;
   
-	/**
+  /**
    * Current trafic instance
    * 
-   * @var 	TraficInterface 
+   * @var   TraficInterface 
    */
   protected static $instance;
   
@@ -58,9 +57,9 @@ abstract class Trafic implements TraficInterface
     return self::$instance;
   }
   
-	/**
+  /**
    * Constructor
-    *
+   *
    * @param   array   $properties   Key/Value pairs
    */
   public function __construct(array $properties=[])
@@ -68,7 +67,7 @@ abstract class Trafic implements TraficInterface
     $this->setProperties($properties);
   }
   
-	/**
+  /**
    * Set properties
     *
    * @param   array     $properties   Key/Value pairs
