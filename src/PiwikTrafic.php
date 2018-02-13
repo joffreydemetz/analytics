@@ -17,7 +17,7 @@ class PiwikTrafic extends Trafic
   /**
    * {@inheritDoc}
    */
-  public $type = 'Piwik';
+  public $type = 'piwik';
   
   /**
    * Website complete URL

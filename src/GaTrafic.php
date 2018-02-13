@@ -12,12 +12,12 @@ namespace JDZ\Analytics;
  * 
  * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
  */
-class GoogleAnalyticsTrafic extends Trafic 
+class GaTrafic extends Trafic 
 {
   /**
    * {@inheritDoc}
    */
-  public $type = 'GoogleAnalytics';
+  public $type = 'ga';
   
   /**
    * Website complete URL
@@ -61,8 +61,8 @@ class GoogleAnalyticsTrafic extends Trafic
       $this->setWebsite($properties['website']);
     }
     
-    if ( isset($properties['website']) ){
-      $this->setUa($properties['website']);
+    if ( isset($properties['ua']) ){
+      $this->setUa($properties['ua']);
     }
   }
   
