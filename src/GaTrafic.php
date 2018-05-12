@@ -10,7 +10,7 @@ namespace JDZ\Analytics;
 /**
  * Google Analytics
  * 
- * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @author Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 class GaTrafic extends Trafic 
 {

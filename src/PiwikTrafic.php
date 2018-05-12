@@ -10,7 +10,7 @@ namespace JDZ\Analytics;
 /**
  * Piwik
  * 
- * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @author Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 class PiwikTrafic extends Trafic 
 {

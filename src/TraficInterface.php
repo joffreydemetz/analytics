@@ -10,7 +10,7 @@ namespace JDZ\Analytics;
 /**
  * Analytics
  * 
- * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @author Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 interface TraficInterface 
 {

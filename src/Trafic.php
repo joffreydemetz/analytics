@@ -10,7 +10,7 @@ namespace JDZ\Analytics;
 /**
  * Web trafic
  * 
- * @author  Joffrey Demetz <joffrey.demetz@gmail.com>
+ * @author Joffrey Demetz <joffrey.demetz@gmail.com>
  */
 abstract class Trafic implements TraficInterface
 {
